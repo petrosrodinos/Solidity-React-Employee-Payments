@@ -9,8 +9,7 @@ interface State {
 
 export const useAuth = () => {
   const [state, setState] = useState<State>({ account: "", contract: null });
-  const address = "0xd8704E5Fa2382f4eD1acFe89A442AD6aDE6c040e";
-  //const address = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+  const address = "0xAf1C7B497A8fDD1A7738d81b5668e6C5C40600E0";
 
   const connect = useCallback(async () => {
     if (typeof window.ethereum !== "undefined") {

@@ -17,8 +17,8 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
-const infura = "";
-const key = "";
+const infura = "https://sepolia.infura.io/v3/3d425329cc8f4706be2fe4d4ee75190d";
+const key = "63d5b4fc150c9a12a69f98f9f8352084f2dec1c935e7c2729b981d494c3879a4";
 
 module.exports = {
   solidity: "0.8.4",
@@ -29,6 +29,10 @@ module.exports = {
   networks: {
     hardhat: {
       chainId: 1337,
+    },
+    sepolia: {
+      url: infura,
+      accounts: [key],
     },
   },
 };

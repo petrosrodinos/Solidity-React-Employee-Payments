@@ -22,11 +22,9 @@ const App: FC = () => {
           setIsModalVisible(false);
         }}
       >
-        <p>Please connect your wallet to Rinkeby test network</p>
+        <p>Please connect your wallet to sepolia test network</p>
       </Modal>
-      <ContractContext.Provider
-        value={{ account: account, contract: contract }}
-      >
+      <ContractContext.Provider value={{ account: account, contract: contract }}>
         <AppBar />
         <Menu />
       </ContractContext.Provider>
